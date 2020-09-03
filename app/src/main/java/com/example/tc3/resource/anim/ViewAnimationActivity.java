@@ -1,4 +1,4 @@
-package com.example.tc3.anim;
+package com.example.tc3.resource.anim;
 
 import android.os.Bundle;
 import android.view.animation.Animation;
@@ -33,9 +33,7 @@ public class ViewAnimationActivity extends AppCompatActivity {
 
     @OnClick(R.id.button)
     public void onViewClicked() {
-        Animation animation = AnimationUtils.loadAnimation(this, R.anim.anim_base);// R.anim.引用視圖动画
-//        imageView.startAnimation(animation);//View应用动画
-        animation.setStartTime(1000L);
-        imageView.setAnimation(animation);
+        Animation animation = AnimationUtils.loadAnimation(this, R.anim.anim_tweem);// R.anim.引用补间动画
+        imageView.startAnimation(animation);//View应用动画
     }
 }

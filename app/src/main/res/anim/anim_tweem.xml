@@ -22,3 +22,4 @@
         android:pivotY="0"
         android:toDegrees="0" /> <!--旋转-->
 </set>
+<!--补间动画 https://blog.csdn.net/carson_ho/article/details/72827747-->

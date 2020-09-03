@@ -1,4 +1,4 @@
-package com.example.tc3android.main;
+package com.example.tc3.main;
 
 import android.app.Activity;
 import android.view.LayoutInflater;

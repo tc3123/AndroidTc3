@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"> <!--颜色状态列表   列表项指定不同状态颜色android:color -->
+    <item android:state_pressed="true" android:color="#ffff0000"/>
+    <item android:state_focused="true" android:color="#ff0000ff"/>
+    <item android:color="#ff000000"/>  <!--系统将应用状态列表中与对象的当前状态匹配的第一项,默认值应始终为最后一项-->
+</selector>

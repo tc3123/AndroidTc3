@@ -1,4 +1,4 @@
-package com.example.tc3android.main;
+package com.example.tc3.main;
 
 class Item {
     private String title;

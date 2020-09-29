@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name="com.example.tc3.anim.ViewAnimationActivity"></activity>
+        <activity android:name="com.example.tc3.anim.AnimatorActivity"></activity>
         <activity android:name="com.example.tc3.resource.drawable.DrawableActivity"></activity>
         <activity android:name="com.example.tc3.resource.state.ColorStateListActivity" />
         <activity android:name="com.example.tc3.resource.anim.FrameAnimationActivity" />
         <activity android:name="com.example.tc3.resource.anim.ViewAnimationActivity" />
-        <activity android:name="com.example.tc3.main.MainActivity">
+        <activity android:name=".main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

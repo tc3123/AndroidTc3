@@ -6,7 +6,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import butterknife.ButterKnife;
-import tc3.android.R;
 
 public abstract  class BaseActivity extends AppCompatActivity {
 

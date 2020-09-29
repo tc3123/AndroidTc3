@@ -1,4 +1,4 @@
-package tc3.android.ui;
+package tc3.android.hardware;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -11,9 +11,9 @@ import tc3.android.R;
 import tc3.android.common.BaseActivity;
 import tc3.android.common.Item;
 import tc3.android.common.RvAdapter;
+import tc3.android.ui.RecyclerViewActivity;
 
-public class UiActivity extends BaseActivity {
-
+public class HardWareActivity extends BaseActivity {
     @BindView(R.id.rvMain)
     RecyclerView rvMain;
     private RvAdapter adapter;
@@ -21,13 +21,13 @@ public class UiActivity extends BaseActivity {
 
     @Override
     protected int getLayout() {
-        return R.layout.activity_ui;
+        return R.layout.activity_hardware;
     }
 
     @Override
     protected void initView() {
         list = Arrays.asList(
-                new Item("RecyclerView", RecyclerViewActivity.class)
+                new Item("NFC", NfcActivity.class)
         );
         adapter = new RvAdapter(this, list);
         rvMain.setAdapter(adapter);
@@ -38,8 +38,4 @@ public class UiActivity extends BaseActivity {
     protected void initEvent() {
 
     }
-
 }
-
-
-

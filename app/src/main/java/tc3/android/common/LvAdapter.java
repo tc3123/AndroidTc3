@@ -13,14 +13,14 @@ import java.util.List;
 
 import tc3.android.R;
 
-public class ItemListAdapter extends BaseAdapter {
+public class LvAdapter extends BaseAdapter {
 
     private Activity activity;
     private List<Item> itemList;
     private LayoutInflater mInflater;
     private ViewHolder viewHolder;
 
-    public ItemListAdapter(Activity activity, List<Item> itemList) {
+    public LvAdapter(Activity activity, List<Item> itemList) {
         this.activity = activity;
         this.itemList = itemList;
         this.mInflater = activity.getLayoutInflater();

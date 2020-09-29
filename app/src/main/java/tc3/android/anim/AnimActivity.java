@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import tc3.android.R;
 import tc3.android.common.Item;
-import tc3.android.common.ItemListAdapter;
+import tc3.android.common.LvAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +21,7 @@ import butterknife.ButterKnife;
 public class AnimActivity extends AppCompatActivity {
 
     private List<Item> itemList;
-    private ItemListAdapter adapter;
+    private LvAdapter adapter;
     @BindView(R.id.lvMain)
     ListView lvMain;
 
@@ -40,7 +40,7 @@ public class AnimActivity extends AppCompatActivity {
         itemList.add(new Item("视图动画-帧", FrameAnimationActivity.class));
         itemList.add(new Item("颜色状态列表",ColorStateListActivity.class));
         itemList.add(new Item("可绘制对象-drawable",DrawableActivity.class));
-        adapter = new ItemListAdapter(this,itemList);
+        adapter = new LvAdapter(this,itemList);
         lvMain.setAdapter(adapter);
         lvMain.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

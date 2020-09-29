@@ -7,7 +7,9 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+
 import tc3.android.anim.AnimActivity;
+import tc3.android.hardware.HardWareActivity;
 import tc3.android.ui.UiActivity;
 
 public class MainActivity extends ListActivity {
@@ -30,6 +32,9 @@ public class MainActivity extends ListActivity {
                 break;
             case 2:
                 startActivity(new Intent(MainActivity.this, AnimActivity.class));
+                break;
+            case 3:
+                startActivity(new Intent(MainActivity.this, HardWareActivity.class));
                 break;
         }
     }

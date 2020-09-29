@@ -24,5 +24,11 @@
         <activity android:name=".anim.FrameAnimationActivity" />
         <activity android:name=".anim.AnimActivity" />
         <activity android:name=".ui.RecyclerViewActivity" />
+        <activity android:name=".hardware.HardWareActivity" />
+        <activity android:name=".hardware.NfcActivity" />
     </application>
+
+    <!-- NFC权限2-->
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-feature android:name="android.hardware.nfc" android:required="true" />
 </manifest>

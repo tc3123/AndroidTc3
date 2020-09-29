@@ -1,4 +1,4 @@
-package com.example.tc3.resource.anim;
+package tc3.android.anim;
 
 import android.os.Bundle;
 import android.view.animation.Animation;
@@ -8,11 +8,11 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.tc3android.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import tc3.android.R;
 
 /**
  * 补间动画

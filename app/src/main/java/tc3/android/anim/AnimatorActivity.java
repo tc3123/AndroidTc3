@@ -1,4 +1,4 @@
-package com.tc3.tc3android;
+package tc3.android.anim;
 
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
@@ -9,9 +9,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import tc3.android.R;
 
 public class AnimatorActivity extends AppCompatActivity {
 

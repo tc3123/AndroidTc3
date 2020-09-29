@@ -1,10 +1,11 @@
-package com.example.tc3.resource.drawable;
+package tc3.android.anim;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.tc3android.R;
+import tc3.android.R;
+
 
 public class DrawableActivity extends AppCompatActivity {
 

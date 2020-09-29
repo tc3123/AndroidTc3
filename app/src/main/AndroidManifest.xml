@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.tc3android">
+    package="tc3.android">
 
     <application
         android:allowBackup="true"
@@ -9,12 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.tc3.anim.ViewAnimationActivity"></activity>
-        <activity android:name="com.example.tc3.anim.AnimatorActivity"></activity>
-        <activity android:name="com.example.tc3.resource.drawable.DrawableActivity"></activity>
-        <activity android:name="com.example.tc3.resource.state.ColorStateListActivity" />
-        <activity android:name="com.example.tc3.resource.anim.FrameAnimationActivity" />
-        <activity android:name="com.example.tc3.resource.anim.ViewAnimationActivity" />
+        <activity android:name=".ui.UiActivity"></activity>
         <activity android:name=".main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +17,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".anim.ViewAnimationActivity" />
+        <activity android:name=".anim.AnimatorActivity" />
+        <activity android:name=".anim.DrawableActivity" />
+        <activity android:name=".anim.ColorStateListActivity" />
+        <activity android:name=".anim.FrameAnimationActivity" />
+        <activity android:name=".anim.ResourceActivity" />
     </application>
-
 </manifest>

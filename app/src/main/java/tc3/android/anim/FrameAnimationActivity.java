@@ -1,4 +1,4 @@
-package com.example.tc3.resource.anim;
+package tc3.android.anim;
 
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Drawable;
@@ -8,14 +8,13 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.tc3android.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import tc3.android.R;
 
 public class FrameAnimationActivity extends AppCompatActivity {
-
 
     @BindView(R.id.imageView2)
     ImageView imageView2;

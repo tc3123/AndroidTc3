@@ -1,4 +1,4 @@
-package com.example.tc3.main;
+package tc3.android.common;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -7,18 +7,20 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.example.tc3android.R;
+
 
 import java.util.List;
 
-public class MainListViewAdapter extends BaseAdapter {
+import tc3.android.R;
+
+public class ItemListAdapter extends BaseAdapter {
 
     private Activity activity;
     private List<Item> itemList;
     private LayoutInflater mInflater;
     private ViewHolder viewHolder;
 
-    public MainListViewAdapter(Activity activity, List<Item> itemList) {
+    public ItemListAdapter(Activity activity, List<Item> itemList) {
         this.activity = activity;
         this.itemList = itemList;
         this.mInflater = activity.getLayoutInflater();

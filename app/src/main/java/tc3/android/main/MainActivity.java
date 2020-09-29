@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import tc3.android.anim.ResourceActivity;
+import tc3.android.anim.AnimActivity;
 import tc3.android.ui.UiActivity;
 
 public class MainActivity extends ListActivity {
@@ -15,7 +15,7 @@ public class MainActivity extends ListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        String[] arr = new String[]{"组件","界面","多媒体"};
+        String[] arr = new String[]{"组件","界面","多媒体","硬件","网络","存储"};
         setListAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,arr));
     }
 
@@ -29,7 +29,7 @@ public class MainActivity extends ListActivity {
                 startActivity(new Intent(MainActivity.this, UiActivity.class));
                 break;
             case 2:
-                startActivity(new Intent(MainActivity.this, ResourceActivity.class));
+                startActivity(new Intent(MainActivity.this, AnimActivity.class));
                 break;
         }
     }

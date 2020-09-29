@@ -18,7 +18,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class ResourceActivity extends AppCompatActivity {
+public class AnimActivity extends AppCompatActivity {
 
     private List<Item> itemList;
     private ItemListAdapter adapter;
@@ -28,7 +28,7 @@ public class ResourceActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_resource);
+        setContentView(R.layout.activity_anim);
         initView();
     }
 
@@ -45,7 +45,7 @@ public class ResourceActivity extends AppCompatActivity {
         lvMain.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                startActivity(new Intent(ResourceActivity.this, itemList.get(position).getClass()));
+                startActivity(new Intent(AnimActivity.this, itemList.get(position).getActivityClass()));
             }
         });
     }

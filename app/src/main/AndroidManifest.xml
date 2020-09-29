@@ -22,6 +22,7 @@
         <activity android:name=".anim.DrawableActivity" />
         <activity android:name=".anim.ColorStateListActivity" />
         <activity android:name=".anim.FrameAnimationActivity" />
-        <activity android:name=".anim.ResourceActivity" />
+        <activity android:name=".anim.AnimActivity" />
+        <activity android:name=".ui.RecyclerViewActivity" />
     </application>
 </manifest>
